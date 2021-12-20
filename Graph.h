@@ -52,7 +52,7 @@ class Graph{
         float floydMarshall(int idSource, int idTarget);
         float dijkstra(int idSource, int idTarget);
 
-        //methods phase1
+        //methods phase2
         float greed();
         float greedRandom();
         float greedRactiveRandom();

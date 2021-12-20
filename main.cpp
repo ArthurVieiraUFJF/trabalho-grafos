@@ -104,16 +104,17 @@ int menu(){
 
     cout << "MENU" << endl;
     cout << "----" << endl;
-    cout << "[1] Subgrafo induzido por conjunto de vértices" << endl;
-    cout << "[2] Caminho Mínimo entre dois vértices - Dijkstra" << endl;
-    cout << "[3] Caminho Mínimo entre dois vértices - Floyd" << endl;
-    cout << "[4] Árvore Geradora Mínima de Prim" << endl;
-    cout << "[5] Árvore Geradora Mínima de Kruskal" << endl;
-    cout << "[6] Imprimir caminhamento em largura" << endl;
-    cout << "[7] Imprimir ordenacao topológica" << endl;
-    cout << "[8] Algoritmo Guloso" << endl;
-    cout << "[9] Algoritmo Guloso Randomizado " << endl;
-    cout << "[10] Algoritmo Guloso Randomizado Reativo" << endl;
+    cout << "[1] Subgrafo vértice-induzido pelo fecho transitivo direto de um vértice" << endl;
+    cout << "[2] Subgrafo vértice-induzido pelo fecho transitivo indireto de um vértice" << endl;
+    cout << "[3] Caminho Mínimo entre dois vértices - Dijkstra" << endl;
+    cout << "[4] Caminho Mínimo entre dois vértices - Floyd" << endl;
+    cout << "[5] Árvore Geradora Mínima de Prim" << endl;
+    cout << "[6] Árvore Geradora Mínima de Kruskal" << endl;
+    cout << "[7] Imprimir caminhamento em largura" << endl;
+    cout << "[8] Imprimir ordenacao topológica" << endl;
+    //cout << "[9] Algoritmo Guloso" << endl;
+    //cout << "[10] Algoritmo Guloso Randomizado " << endl;
+    //cout << "[11] Algoritmo Guloso Randomizado Reativo" << endl;
     cout << "[0] Sair" << endl;
 
     cin >> selecao;
@@ -126,44 +127,49 @@ void selecionar(int selecao, Graph* graph, ofstream& output_file){
 
     switch (selecao) {
 
-        //Subgrafo induzido por um conjunto de vértices X;
+            //Subgrafo vértice-induzido pelo fecho transitivo direto de um vértice X;
         case 1:{
 
             break;
         }
-            //Caminho mínimo entre dois vértices usando Dijkstra;
+            //Subgrafo vértice-induzido pelo fecho transitivo direto de um vértice X;
         case 2:{
 
             break;
         }
-
-            //Caminho mínimo entre dois vértices usando Floyd;
+            //Caminho mínimo entre dois vértices usando Dijkstra;
         case 3:{
 
             break;
         }
 
-            //AGM - Kruscal;
+            //Caminho mínimo entre dois vértices usando Floyd;
         case 4:{
+
+            break;
+        }
+
+            //AGM - Prim;
+        case 5:{
 
 
 
             break;
         }
 
-            //AGM Prim;
-        case 5:{
+            //AGM - Kruskal;
+        case 6:{
 
             break;
         }
 
             //Busca em largura;
-        case 6:{
+        case 7:{
 
             break;
         }
             //Ordenação Topologica;
-        case 7:{
+        case 8:{
 
 
             break;
